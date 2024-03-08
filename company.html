@@ -125,11 +125,11 @@
                             //Initializing Primary X Axis
                             primaryXAxis: {
                                 valueType: 'Category',
-                                title: 'Countries',
+                                title: ' ',
                             },
                             //Initializing Primary Y Axis
                              primaryYAxis: {
-                                title: 'Medals in number'
+                                title: ''
                             },
                  
                             //Initializing Chart Series
@@ -137,11 +137,11 @@
                                 {
                                     type: 'Column',
                                     dataSource: [
-                                        { country: "USA", medal: 50 },
-                                        { country: "China", medal: 40 },
-                                        { country: "Japan", medal: 70 },
-                                        { country: "Australia", medal: 60 },
-                                        { country: "France", medal: 30 },
+                                        { country: "A", medal: 50 },
+                                        { country: "B", medal: 40 },
+                                        { country: "C", medal: 70 },
+                                        { country: "D", medal: 60 },
+                                        { country: "E", medal: 30 },
                                     ],
                                     xName: 'country',
                                     yName: 'medal',
@@ -168,7 +168,7 @@
                         maximum: 25,
                         interval: 10,
                         edgeLabelPlacement: "Shift",
-                        labelFormat: "{value}°C"
+                        labelFormat: "{value}"
                     },
                     //Initializing Chart Series
                     series: [
@@ -191,7 +191,7 @@
                             xName: "x",
                             width: 2,
                             yName: "y",
-                            name: "Warmest",
+                            name: "A",
                         },
                         {
                             type: "Radar",
@@ -212,7 +212,7 @@
                             xName: "x",
                             width: 2,
                             yName: "y",
-                            name: "Coldest",
+                            name: "B",
                         }
                     ],
                 });
@@ -247,7 +247,7 @@
                                 type: 'StackingBar',
                                 dataSource: [{ x: 'Jan', y: 6 }, { x: 'Feb', y: 8 }, { x: 'Mar', y: 12 }, { x: 'Apr', y: 15.5 },
                                 { x: 'May', y: 20 }, { x: 'Jun', y: 24 }],
-                                name: 'Apple',
+                                name: 'A',
                                 xName: 'x', width: 2,
                                 yName: 'y'
                             },
@@ -255,7 +255,7 @@
                                 type: 'StackingBar',
                                 dataSource: [{ x: 'Jan', y: 6 }, { x: 'Feb', y: 8 }, { x: 'Mar', y: 11 }, { x: 'Apr', y: 16 },
                                 { x: 'May', y: 21 }, { x: 'Jun', y: 25 }],
-                                name: 'Orange',
+                                name: 'B',
                                 xName: 'x', width: 2,
                                 yName: 'y'
                             },
@@ -263,7 +263,7 @@
                                 type: 'StackingBar',
                                 dataSource: [{ x: 'Jan', y: -1 }, { x: 'Feb', y: -1.5 }, { x: 'Mar', y: -2 }, { x: 'Apr', y: -2.5 },
                                 { x: 'May', y: -3 }, { x: 'Jun', y: -3.5 }],
-                                name: 'Wastage', width: 2,
+                                name: 'C', width: 2,
                                 xName: 'x',
                                 yName: 'y'
                  
@@ -289,10 +289,10 @@
                         series: [
                             {
                                 dataSource: [
-                                    { 'x': 'Chrome', y: 37 }, { 'x': 'UC Browser', y: 17 },
-                                    { 'x': 'iPhone', y: 19 },
-                                    { 'x': 'Others', y: 4 }, { 'x': 'Opera', y: 11 },
-                                    { 'x': 'Android', y: 12 }
+                                    { 'x': 'A', y: 37 }, { 'x': 'AB', y: 17 },
+                                    { 'x': 'B', y: 19 },
+                                    { 'x': 'C', y: 4 }, { 'x': 'CD', y: 11 },
+                                    { 'x': 'D', y: 12 }
                                 ],
                                 dataLabel: {
                                     visible: true,
