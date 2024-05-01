@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="stackedBar.js" type="text/javascript"></script>
+    <script src="radar.js" type="text/javascript"></script>
+    <title>Placement Portal</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+
+        }
+        .nav-menu {
+            width: 250px;
+            background-color: #333;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            margin-top: 25px;
+            margin-left: 25px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .content {
+            float: left;
+            width: 80%;
+            padding: 20px;
+            margin-left: 19%;
+        }
+        .company-list {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .company-list th, .company-list td {
+            border: 1px solid #6a0572;
+            padding: 10px;
+            text-align: left;
+        }
+        .company-list th {
+            background-color: #6a0572;
+            color: white;
+        }
+        .top-bar {
+            background-color: #53b4d5;
+            padding: 30px;
+            margin-left: 10%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h1>PLACEMENT PORTAL</h1>
+    </div>
+    <div class="container">
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="company.html">Company</a>
+            <a href="student.html">Students</a>
+            <a href="applied.html">Applied</a>
+            <a href="profile.html">Profile</a>
+        </div>
+        <div class="content">
+            <table class="company-list">
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Date of Arrival</th>
+                    <th>CTC</th>
+                    <th>Year</th>
+                    <th>More Info</th>
+                </tr>
+                <tr>
+                    <td>Amazon</td>
+                    <td>Product</td>
+                    <td>18 Jun 2023</td>
+                    <td>42 Lakhs</td>
+                    <td>2023</td>
+                    <td><img src="https://cdn-icons-png.flaticon.com/512/1/1176.png" width="25px" height="25px"></td>
+                </tr>
+                <tr>
+                    <td>Microsoft</td>
+                    <td>Product</td>
+                    <td>23 July 2023</td>
+                    <td>40 Lakhs</td>
+                    <td>2023</td>
+                    <td><img src="https://cdn-icons-png.flaticon.com/512/1/1176.png" width="25px" height="25px"></td>
+                </tr>
+                <tr>
+                    <td>Capegemini</td>
+                    <td>Service</td>
+                    <td>12 Aug 2023</td>
+                    <td>12 Lakhs</td>
+                    <td>2023</td>
+                    <td><img src="https://cdn-icons-png.flaticon.com/512/1/1176.png" width="25px" height="25px"></td>
+                </tr>
+                <tr>
+                    <td>DXC</td>
+                    <td>Service</td>
+                    <td>23 Aug 2023</td>
+                    <td>8 Lakhs</td>
+                    <td>2023</td>
+                    <td><img src="https://cdn-icons-png.flaticon.com/512/1/1176.png" width="25px" height="25px"></td>
+                </tr>
+                <tr>
+                    <td>Tech Mahindra</td>
+                    <td>Service</td>
+                    <td>13 Sept 2023</td>
+                    <td>7 Lakhs</td>
+                    <td>2023</td>
+                    <td><img src="https://cdn-icons-png.flaticon.com/512/1/1176.png" width="25px" height="25px"></td>
+                </tr>
+                <tr>
+                    <td>Accenture</td>
+                    <td>Service</td>
+                    <td>9 Oct 2023</td>
+                    <td>10 Lakhs</td>
+                    <td>2023</td>
+                    <td><img src="https://cdn-icons-png.flaticon.com/512/1/1176.png" width="25px" height="25px"></td>
+                </tr>
+                <tr>
+                    <td>Cognizant</td>
+                    <td>Service</td>
+                    <td>18 Oct 2023</td>
+                    <td>8 Lakhs</td>
+                    <td>2023</td>
+                    <td><img src="https://cdn-icons-png.flaticon.com/512/1/1176.png" width="25px" height="25px"></td>
+                </tr>
+                <tr>
+                    <td>TCS</td>
+                    <td>Service</td>
+                    <td>19 Nov 2023</td>
+                    <td>5 Lakhs</td>
+                    <td>2023</td>
+                    <td><img src="https://cdn-icons-png.flaticon.com/512/1/1176.png" width="25px" height="25px"></td>
+                </tr>
+                <!-- Add other company rows here -->
+            </table>
+        </div>
+    </div>
+</body>
+</html>
