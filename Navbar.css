@@ -1,0 +1,40 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    background: linear-gradient(9deg, #6a11cb, #2575fc);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navbar-links li a:hover {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+.navbar-brand a:hover {
+    color: #ffeb3b;
+}

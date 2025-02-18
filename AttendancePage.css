@@ -1,0 +1,146 @@
+/* src/pages/AttendancePage.css */
+
+/* General Styles */
+.attendance-page {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+}
+
+.page-title {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.loading, .error {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 50px;
+}
+
+.error {
+    color: #ff4444;
+}
+
+/* Form Styles */
+.attendance-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+.attendance-form h2 {
+    text-align: center;
+    color: #6200ea;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group select {
+    appearance: none;
+    background-color: #fff;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3700b3;
+}
+
+/* Table Styles */
+.records-title {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.attendance-table th, .attendance-table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.attendance-table th {
+    background-color: #6200ea;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.attendance-table tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.attendance-table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Status Styles */
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status.present {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.status.absent {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Animation for Table Rows */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.attendance-table tbody tr {
+    animation: fadeIn 0.5s ease-in-out;
+}

@@ -1,0 +1,97 @@
+/* src/components/Attendance.css */
+
+/* General Styles */
+.attendance-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+}
+
+.attendance-title {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Loading and Error Messages */
+.loading, .error {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 50px;
+}
+
+.error {
+    color: #ff4444;
+}
+
+/* Table Styles */
+.attendance-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.attendance-table th, .attendance-table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.attendance-table th {
+    background-color: #6200ea;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.attendance-table tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.attendance-table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Status Styles */
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status.present {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.status.absent {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.status.late {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+/* Animation for Table Rows */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.attendance-row {
+    animation: fadeIn 0.5s ease-in-out;
+}
